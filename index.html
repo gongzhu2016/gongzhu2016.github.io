@@ -1,1 +1,80 @@
-hold on
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>公主生日快乐</title> 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <style>
+    h1{ font-size: 5em; font-family: helvetica,arial; color: #fff; }
+    h2{ font-size: 1em; font-family: helvetica,arial; color: #fff; }
+    .section{ background-size: cover; }
+    #footer{ position: fixed; height: 50px; display: block; width: 100%;
+      background: #333; z-index: 9; text-align: center; padding: 0px 0 0 0;
+      bottom: 0px; opacity: 0.2; }
+    #header{ position: fixed; height: 50px; display: block; width: 100%;
+      background: #333; z-index: 9; text-align: center; padding: 0px 0 0 0;
+      top : 0px; opacity: 0.2; }
+    .section{ text-align:center; }
+    #section1{ background-color: #333333; }
+    #section2{ background-color: #000000; background-image: url(gz1.jpg); }
+
+    /* TODO: add images like: 
+
+    #section2{ background-color: #000000; background-image: url(gz1.jpg); }
+
+    */
+    
+    #section3{ background-color: #777777; }
+    #section4{ background-color: #999999; }
+  </style>
+  <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+  <script type="text/javascript" src="jquery.min.js"></script>
+  <script type="text/javascript" src="jquery.fullPage.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('div#header').hide();
+      $('#fullpage').fullpage(
+        {
+          controlArrows: false,
+          onLeave: function(index, nextIndex, direction) {
+            if (nextIndex == 1) { $('div#header').fadeOut() }
+            if (index == 1) { $('div#header').fadeIn() }
+            if (nextIndex == 4) { $('div#footer').fadeOut() }
+            if (index == 4) { $('div#footer').fadeIn() }
+          }
+        }
+      );
+      $('#fullpage').fullpage.setAllowScrolling(false);
+
+      $('div#footer').click( function() { 
+          $('#fullpage').fullpage.moveSectionDown();
+        }
+      );
+      $('div#header').click( function() { 
+          $('#fullpage').fullpage.moveSectionUp();
+        }
+      );
+    });
+  </script>
+
+</head>
+
+<body>
+  <div id="header">
+    <h2><span id="navbtn" class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></h2>
+  </div>
+  <div id="footer">
+    <h2><span id="navbtn" class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></h2>
+  </div>
+  <div id="fullpage">
+    <div class="section" id="section1"><h1>公主</h1><h1>生日快乐</h1></div>
+    <div class="section" id="section2"></div>
+    <div class="section" id="section3"><h1></h1></div>
+    <div class="section" id="section4"><h1>Some section</h1></div>
+  </div>
+
+</body>
+
+</html>
