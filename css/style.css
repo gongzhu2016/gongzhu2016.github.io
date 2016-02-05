@@ -134,26 +134,61 @@ body { background-repeat: no-repeat; }
 
 #section1{
   background-image: url(../bg3.jpg);
+  background-position: center;
 }
 
 #section2 {
   content: "";
   background-image: url(../gz01.png);
-  /*background-position: center;*/
+  background-position: center;
 }
 
 #section3{
   content: "";
   background-image: url(../gz02.png);
-
+  background-position: center;
 }
 
 #section4 {
   content: "";
   background-image: url(../gz03.png);
+  background-position: center;
 }
+
 #section5 {
+  content: "";
   background-image: url(../gz04.jpeg);
+  background-position: center;
+}
+
+#section6 {
+  content: "";
+  background-image: url(../gz05.png);
+  background-position: center;
+}
+
+#section7 {
+  content: "";
+  background-image: url(../gz06.png);
+  background-position: center;
+}
+
+#section8 {
+  content: "";
+  background-image: url(../gz07.png);
+  background-position: center;
+}
+
+#section9 {
+  content: "";
+  background-image: url(../gz08.png);
+  background-position: center;
+}
+
+#section10 {
+  content: "";
+  background-image: url(../gz09.jpeg);
+  background-position: center;
 }
 
 /*#section4::after{
