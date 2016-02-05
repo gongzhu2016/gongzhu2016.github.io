@@ -63,10 +63,6 @@ body { background-repeat: no-repeat; }
   color: #663366;
 }
 
-#section5 {
-  /*background-image: url(../bg2.jpg);*/
-}
-
 #t1{
   font-size: 2em;
   color: #FFCCCC;
@@ -142,25 +138,22 @@ body { background-repeat: no-repeat; }
 
 #section2 {
   content: "";
-  background-image: url(../gz2.jpg);
+  background-image: url(../gz01.png);
   /*background-position: center;*/
 }
 
 #section3{
   content: "";
-  background-image: url(../gz3.jpg);
-  /* top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0; */
-  /* position: absolute; */
-  /* z-index: -1;    */
-  /* background-position: center;  */
+  background-image: url(../gz02.png);
+
 }
 
 #section4 {
-  background-image: url(../gz4.jpg);
-  /* background-position: center;   */
+  content: "";
+  background-image: url(../gz03.png);
+}
+#section5 {
+  background-image: url(../gz04.jpeg);
 }
 
 /*#section4::after{
