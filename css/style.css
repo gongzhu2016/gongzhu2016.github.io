@@ -7,50 +7,50 @@ body { background-repeat: no-repeat; }
   position: relative;
   top: 130px;
   font-size: 4em;
-  font-family: Lato, arial; 
-  color: #FFFF99; 
+  font-family: Lato, arial;
+  color: #6699CC;
 }
 
-#section1 h2{ 
+#section1 h2{
   position: relative;
   top: 130px;
-  font-size: 3em; 
-  font-family: 'Noto Sans SC',arial; 
-  color: #FF9999; 
+  font-size: 3em;
+  font-family: 'Noto Sans SC',arial;
+  color: #0099CC;
 }
 
 #section2 h1{
   position: relative;
-  top: 100px;
+  top: 130px;
   font-size: 3em;
   font-weight: 900;
   z-index: 2;
 
-  font-family: Hiragino Sans GB, arial; 
-  color: #FF0000; 
+  font-family: Hiragino Sans GB, arial;
+  color: #FF9900;
 }
 
-#section2 h2{ 
+#section2 h2{
   position: relative;
-  top: 100px;
-  font-size: 2em; 
-  font-family: 'Noto Sans SC',arial; 
-  color: #FFFF00; 
+  top: 130px;
+  font-size: 2em;
+  font-family: 'Noto Sans SC',arial;
+  color: #FFCC33;
   z-index: 2;
 }
 
 #section2 h3{
   position: relative;
-  top: 100px;
+  top: 130px;
   font-size: 2em;
-  font-family: Noto Sans SC, arial; 
-  color: #FFFF99; 
+  font-family: Noto Sans SC, arial;
+  color: #FFCC99;
   z-index: 2;
 
 }
 
 #section4 h1{
-  font-size: 1.5em;
+  font-size: 1.9em;
 }
 
 #section3 {
@@ -58,91 +58,94 @@ body { background-repeat: no-repeat; }
 }
 
 #section4 {
-  font-family: Hiragino Sans GB, arial;
-  color: #336666;
+  font-family: Apple LiGothic Medium, Hiragino Sans GB, arial;
+  font-weight: 900;
+  color: #663366;
 }
+
 
 #t1{
   font-size: 2em;
-  color: #660066; 
+  color: #FFCCCC;
 }
 
-#t2{ 
-  font-size: 2.5em; 
-  color: #3399FF; 
+#t2{
+  font-size: 2.5em;
+  color: #993366;
 }
 
 #t3{
   font-size: 3em;
-  color: #66FF66; 
+  color: #FFCC99;
 }
 
 #t4{
   font-size: 1.5em;
-  color: #CCFFCC; 
+  color: #FF99CC;
 }
 
 #t5{
   font-size: 3em;
-  color: #FFFF99; 
+  color: #FFCC99;
 }
 
 #t6{
-  font-size: 1em;
-  color: #330066; 
+  font-size: 1.5em;
+  color: #FF6666;
 }
 
 #t7{
   font-size: 3.5em;
-  color: #FF99FF; 
+  color: #CC99CC;
 }
-    
-.section{ 
+
+.section{
   background-size: cover;
 }
 
-#footer{ 
-  position: fixed; 
-  height: 50px; 
-  display: block; 
+#footer{
+  position: fixed;
+  height: 50px;
+  display: block;
   width: 100%;
-  background: #333; 
-  z-index: 9; 
-  text-align: center; 
+  background: #333;
+  z-index: 9;
+  text-align: center;
   padding: 0px 0 0 0;
-  bottom: 0px; 
-  opacity: 0.2; 
+  bottom: 0px;
+  opacity: 0.2;
 }
 
-#header{ 
-  position: fixed; 
-  height: 50px; 
-  display: block; 
+#header{
+  position: fixed;
+  height: 50px;
+  display: block;
   width: 100%;
-  background: #333; 
-  z-index: 9; 
-  text-align: center; 
+  background: #333;
+  z-index: 9;
+  text-align: center;
   padding: 0px 0 0 0;
-  top : 0px; 
-  opacity: 0.2; 
+  top : 0px;
+  opacity: 0.2;
 }
 
-.section{ 
-  text-align:center; 
+.section{
+  text-align:center;
 }
 
-#section1{ 
+#section1{
   background-image: url(../bg1.jpg);
 }
 
-#section2 { 
+#section2 {
+  content: "";
   background-image: url(../gz2.jpg);
-  /* background-position: center;   */
+  /*background-position: center;*/
 }
 
 #section3{
   content: "";
-  background: url(../gz3.jpg);
+  background-image: url(../gz3.jpg);
   /* top: 0;
   left: 0;
   bottom: 0;
@@ -152,12 +155,12 @@ body { background-repeat: no-repeat; }
   /* background-position: center;  */
 }
 
-#section4 { 
+#section4 {
   background-image: url(../gz4.jpg);
   /* background-position: center;   */
 }
 
-/*#section4::after{ 
+/*#section4::after{
   content: "";
   background: url(../gz4.jpg);
   opacity: 0.7;
@@ -166,7 +169,7 @@ body { background-repeat: no-repeat; }
   bottom: 0;
   right: 0;
   position: absolute;
-  z-index: -1;     
+  z-index: -1;
 }*/
 
 .glyphicon {
