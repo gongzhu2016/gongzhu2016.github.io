@@ -63,6 +63,9 @@ body { background-repeat: no-repeat; }
   color: #663366;
 }
 
+#section5 {
+  /*background-image: url(../bg2.jpg);*/
+}
 
 #t1{
   font-size: 2em;
