@@ -4,6 +4,9 @@ $(document).ready(function() {
   $('#fullpage').fullpage(
     {
       controlArrows: false,
+      css3: false,
+      easing: 'easeOutElastic',
+      easingcss3: 'ease',
       onLeave: function(index, nextIndex, direction) {
         if (nextIndex == 1) { $('div#header').fadeOut() }
         if (index == 1) { $('div#header').fadeIn() }
@@ -14,11 +17,11 @@ $(document).ready(function() {
     });
   $('#fullpage').fullpage.setAllowScrolling(false);
 
-  $('div#footer').click( function() { 
+  $('div#footer').click( function() {
       $('#fullpage').fullpage.moveSectionDown();
     }
   );
-  $('div#header').click( function() { 
+  $('div#header').click( function() {
       $('#fullpage').fullpage.moveSectionUp();
     }
   );

@@ -5,18 +5,18 @@ body { background-repeat: no-repeat; }
 
 #section1 h1{
   position: relative;
-  top: 130px;
+  top: -150px;
   font-size: 4em;
   font-family: Lato, arial;
-  color: #6699CC;
+  color: #F6CECE;
 }
 
 #section1 h2{
   position: relative;
-  top: 130px;
+  top: -70px;
   font-size: 3em;
   font-family: 'Noto Sans SC',arial;
-  color: #0099CC;
+  color: #FF4000;
 }
 
 #section2 h1{
@@ -137,7 +137,7 @@ body { background-repeat: no-repeat; }
 }
 
 #section1{
-  background-image: url(../bg1.jpg);
+  background-image: url(../bg3.jpg);
 }
 
 #section2 {
