@@ -1,78 +1,69 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en" class="no-js">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>公主生日快乐</title> 
+  <title>你被邀请了！</title> 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-  <style>
-    h1{ font-size: 5em; font-family: helvetica,arial; color: #fff; }
-    h2{ font-size: 1em; font-family: helvetica,arial; color: #fff; }
-    .section{ background-size: cover; }
-    #footer{ position: fixed; height: 50px; display: block; width: 100%;
-      background: #333; z-index: 9; text-align: center; padding: 0px 0 0 0;
-      bottom: 0px; opacity: 0.2; }
-    #header{ position: fixed; height: 50px; display: block; width: 100%;
-      background: #333; z-index: 9; text-align: center; padding: 0px 0 0 0;
-      top : 0px; opacity: 0.2; }
-    .section{ text-align:center; }
-    #section1{ background-color: #333333; }
-    #section2{ background-color: #000000; background-image: url(gz1.jpg); }
-
-    /* TODO: add images like: 
-
-    #section2{ background-color: #000000; background-image: url(gz1.jpg); }
-
-    */
-    
-    #section3{ background-color: #777777; }
-    #section4{ background-color: #999999; }
-  </style>
-  <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
-  <script type="text/javascript" src="jquery.min.js"></script>
-  <script type="text/javascript" src="jquery.fullPage.js"></script>
-
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $('div#header').hide();
-      $('#fullpage').fullpage(
-        {
-          controlArrows: false,
-          onLeave: function(index, nextIndex, direction) {
-            if (nextIndex == 1) { $('div#header').fadeOut() }
-            if (index == 1) { $('div#header').fadeIn() }
-            if (nextIndex == 4) { $('div#footer').fadeOut() }
-            if (index == 4) { $('div#footer').fadeIn() }
-          }
-        }
-      );
-      $('#fullpage').fullpage.setAllowScrolling(false);
-
-      $('div#footer').click( function() { 
-          $('#fullpage').fullpage.moveSectionDown();
-        }
-      );
-      $('div#header').click( function() { 
-          $('#fullpage').fullpage.moveSectionUp();
-        }
-      );
-    });
-  </script>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css"/>
+  <script src="js/jquery-1.8.3.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+  <script type="text/javascript" src="js/javascript.js"></script>
+  
 
 </head>
 
 <body>
   <div id="header">
-    <h2><span id="navbtn" class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></h2>
+    <h2><span id="navbtn" class="glyphicon glyphicon-menu-up" aria-hidden="true" style="color:white"></span></h2>
   </div>
+  
   <div id="footer">
-    <h2><span id="navbtn" class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></h2>
+    <h2>
+      <span id="navbtn" class="glyphicon glyphicon-menu-down" aria-hidden="true" style="color:white"></span>
+    </h2>
   </div>
+
+
+  
   <div id="fullpage">
-    <div class="section" id="section1"><h1>公主</h1><h1>生日快乐</h1></div>
-    <div class="section" id="section2"></div>
-    <div class="section" id="section3"><h1></h1></div>
-    <div class="section" id="section4"><h1>Some section</h1></div>
+    <div class="section" id="section1">
+      <h1>shhhhhhh!</h1>
+      <h2>你被邀请参加一个</h2> <h2>神秘聚会！</h2>
+    </div>
+    <div class="section" id="section2">
+      <h3>欢迎参加</h3>
+      <h1>黄欣怡 i.e.公主</h1>
+      <h2>21岁生日趴！</h2>
+    </div>
+    <div class="section" id="section3">
+      <h1 id="t1">这里有</h1>
+      <h1 id="t2">定制蛋糕</h1>
+      <h1 id="t3">Lady M</h1>
+      <h1 id="t4">温馨浪漫的party布置</h1>
+      <h1 id="t5">无限量供应的酒水</h1>
+      <h1 id="t6">扑克，桌游，一群善良可爱的人</h1>
+      <h1 id="t7">和一个毫不知情的公主！</h1>
+    </div>
+    <div class="section" id="section4">
+      <h1>所以，请带上对公主满满的爱</h1>
+      <h1>来参加这个surprise party吧！</h1>
+      <h1>被选召的孩子们，记得要保密！</h1>
+      <br>
+      <br>
+      <h1>时间：2016年2月5日晚20:00</h1>
+      <h1>（具体时间，微信联系）</h1>
+      <h1>2020 Channing Way, Apt 1</h1>
+      <br>
+      <br>
+      <h1>不见不散！</h1>
+    </div>
+    <div class="section" id="section5">
+      <h1>加入微信群！</h1>
+    </div>
   </div>
 
 </body>

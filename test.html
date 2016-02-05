@@ -1,0 +1,110 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>你被邀请了！</title> 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css"/>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/animatescroll.js"></script>
+  <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+  <script type="text/javascript" src="js/javascript.js"></script>
+  
+
+</head>
+<body>
+  <div class="container"> 
+      <div class="main clearfix">
+
+              <a href="#" onclick="$('#section-3').animatescroll();">
+                <span class="icon"> 
+                  <i aria-hidden="true" class="icon-services"></i>
+                </span>
+                <span>What is it?</span>
+              </a>
+      </div>
+    </div><!-- /container -->
+                
+                <div class="main clearfix">
+                        <div id="section-2">
+                            <div class="content-wrapper w70">                                
+                                <h1>What is it exactly?</h1>
+                                <p><strong>AnimateScroll</strong> is a jQuery plugin which enables you to <strong>scroll to any part of the page
+                                    in style</strong> by just calling the <code>animatescroll()</code> function with the <code>Id</code> or <code>Classname</code>
+                                    of the element where you want to scroll to.</p>                                
+                                <p><strong>Basic usage:</strong></p>
+                                <pre><code class="language-javascript">$('body').animatescroll();</code></pre>
+                                <button class="btn demo-btn" onclick="$('body').animatescroll();">Click for a Demo</button>
+                                <p>
+                                    It gives power to the user with its various options to customize the style of scrolling, scroll speed and many more.
+                                    Supports more than 30 unique Scrolling Styles.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div id="section-3">
+                            <div class="content-wrapper w70"> 
+                                <h1>Options</h1>
+                                <p>AnimateScroll has 6 options:</p>
+                                <ul>
+                                    <li>easing</li>
+                                    <li>scrollSpeed</li>
+                                    <li>padding</li>
+                                </ul>
+                                <p><strong>easing : </strong> This option defines the scrolling style. The various easing effects supported can be seen at <a href="http://easings.net" target="_blank">easings.net</a> <small>(Accepts string only)</small></p>
+                                <p><strong>scrollSpeed : </strong> Controls the scrolling speed, higher is the number slower is the scroll speed <small>(Accepts only number)</small></p>
+                                <p><strong>padding : </strong> Adjusts little ups and downs in scrolling. Suppose a small amount of padding is applied to a particular element due to which the scroll didn't end at the right position, so this option helps you to rectify <small>(Accepts numbers only, can be negative)</small></p>
+
+                                <!-- Added in 1.0.5 -->
+                                <h1>Added in v1.0.5</h1>
+                                <p>4<sup>th</sup> option:</p>
+                                <ul>
+                                    <li>element</li>
+                                </ul>
+                                <p><strong>element : </strong> The element in which you want this plugin to work. Default is "body". <small>(Accepts any jQuery/CSS selector)</small></p>
+                                <div>
+                                    For Example:<br/>
+                                    <div class="element-demo">
+                                        <p>
+                                            <button onclick="$('#last-paragraph').animatescroll({element:'.element-demo',padding:20});">Click here</button> to scroll to the last paragraph within this "div" element
+                                        </p>
+                                        <p>
+                                            This "div" element has a class-name "element-demo" which is the value passed for "element" option while calling the plugin.
+                                        </p>
+                                        <p>
+                                            Compzets.com is India's first open source software and freeware publishing site, Download and Upload Open source software and Freeware relevant to the Paid ones for PC,Mac and Linux.
+                                        </p>
+                                        <p >
+                                            It also makes its own Cloud Applications for making tasks easy. Recently it has launched a new Plugin Showcase too.
+                                        </p>
+                                        <p>
+                                            This website is your source of unprecedented access to all kinds of pc,mac or linux software (Open Source or Freeware only) with detailed coverage of tech infos along with multiple screen shots and moreover you can not only download your favorite gadgets but you can also UPLOAD your own software to reach thousand of audience. Stay connected to all the latest happenings in the gadget world,with regular updates on new software and announcements with the help of our RSS Feed,just at a few clicks!
+                                        </p>
+                                        <p id="last-paragraph">
+                                            The word "Compzets" does not have a literal meaning,it is just derived from the word Gadget which is related to Electronic devices where as Compzets is related to Computer software which are nothing but gadgets for computer. 
+                                        </p>
+                                        <p>
+                                            Thanks to <a href="https://plus.google.com/114685591029748634833" target="_blank">Ronan DMP</a> for asking this feature!
+                                        </p>
+                                    </div>
+                                </div>
+                                The Code is like:<br/>
+                                    <pre class="language-javascript"><code class="language-javascript">$('#last-paragraph').animatescroll({element:'.element-demo',padding:20});</code></pre>
+
+                                <!-- Added in 1.0.7 -->
+                                <h1>Added in v1.0.7</h1>
+                                <p>2 more options:</p>
+                                <ul>
+                                    <li>onScrollStart</li>
+                                    <li>onScrollEnd</li>
+                                </ul>
+                                <p><strong>onScrollStart : </strong> A function to be called before scrolling starts</p>
+                                <p><strong>onScrollEnd : </strong> A function to be called after the scrolling ends completely with animations</p>
+                                The Code will be like:<br/>
+                                    <pre class="language-javascript"><code class="language-javascript">$('#target-element').animatescroll({onScrollStart:function(){alert('scroll started')},onScrollEnd:function(){alert('scroll ended')}});</code></pre>
+                            </div>
+                        </div>
+
+</body>

@@ -1,0 +1,176 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanssc.css);
+@import url(https://fonts.googleapis.com/css?family=Lato:400);
+
+body { background-repeat: no-repeat; }
+
+#section1 h1{
+  position: relative;
+  top: 130px;
+  font-size: 4em;
+  font-family: Lato, arial; 
+  color: #FFFF99; 
+}
+
+#section1 h2{ 
+  position: relative;
+  top: 130px;
+  font-size: 3em; 
+  font-family: 'Noto Sans SC',arial; 
+  color: #FF9999; 
+}
+
+#section2 h1{
+  position: relative;
+  top: 100px;
+  font-size: 3em;
+  font-weight: 900;
+  z-index: 2;
+
+  font-family: Hiragino Sans GB, arial; 
+  color: #FF0000; 
+}
+
+#section2 h2{ 
+  position: relative;
+  top: 100px;
+  font-size: 2em; 
+  font-family: 'Noto Sans SC',arial; 
+  color: #FFFF00; 
+  z-index: 2;
+}
+
+#section2 h3{
+  position: relative;
+  top: 100px;
+  font-size: 2em;
+  font-family: Noto Sans SC, arial; 
+  color: #FFFF99; 
+  z-index: 2;
+
+}
+
+#section4 h1{
+  font-size: 1.5em;
+}
+
+#section3 {
+  font-family: Noto Sans SC, arial;
+}
+
+#section4 {
+  font-family: Hiragino Sans GB, arial;
+  color: #336666;
+}
+
+#t1{
+  font-size: 2em;
+  color: #660066; 
+}
+
+#t2{ 
+  font-size: 2.5em; 
+  color: #3399FF; 
+}
+
+#t3{
+  font-size: 3em;
+  color: #66FF66; 
+}
+
+#t4{
+  font-size: 1.5em;
+  color: #CCFFCC; 
+}
+
+#t5{
+  font-size: 3em;
+  color: #FFFF99; 
+}
+
+#t6{
+  font-size: 1em;
+  color: #330066; 
+}
+
+#t7{
+  font-size: 3.5em;
+  color: #FF99FF; 
+}
+    
+.section{ 
+  background-size: cover;
+}
+
+#footer{ 
+  position: fixed; 
+  height: 50px; 
+  display: block; 
+  width: 100%;
+  background: #333; 
+  z-index: 9; 
+  text-align: center; 
+  padding: 0px 0 0 0;
+  bottom: 0px; 
+  opacity: 0.2; 
+}
+
+#header{ 
+  position: fixed; 
+  height: 50px; 
+  display: block; 
+  width: 100%;
+  background: #333; 
+  z-index: 9; 
+  text-align: center; 
+  padding: 0px 0 0 0;
+  top : 0px; 
+  opacity: 0.2; 
+}
+
+.section{ 
+  text-align:center; 
+}
+
+#section1{ 
+  background-image: url(../bg1.jpg);
+}
+
+#section2 { 
+  background-image: url(../gz2.jpg);
+  /* background-position: center;   */
+}
+
+#section3{
+  content: "";
+  background: url(../gz3.jpg);
+  /* top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0; */
+  /* position: absolute; */
+  /* z-index: -1;    */
+  /* background-position: center;  */
+}
+
+#section4 { 
+  background-image: url(../gz4.jpg);
+  /* background-position: center;   */
+}
+
+/*#section4::after{ 
+  content: "";
+  background: url(../gz4.jpg);
+  opacity: 0.7;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;     
+}*/
+
+.glyphicon {
+    position: relative;
+    top: -20px;
+    font-size: 50px;
+}
