@@ -10,8 +10,8 @@ $(document).ready(function() {
       onLeave: function(index, nextIndex, direction) {
         if (nextIndex == 1) { $('div#header').fadeOut() }
         if (index == 1) { $('div#header').fadeIn() }
-        if (nextIndex == 11) { $('div#footer').fadeOut() }
-        if (index == 11) { $('div#footer').fadeIn() }
+        if (nextIndex == 10) { $('div#footer').fadeOut() }
+        if (index == 10) { $('div#footer').fadeIn() }
       },
       easing:'easeInOutBack'
     });
