@@ -145,7 +145,7 @@ body { background-repeat: no-repeat; }
 
 #section3{
   content: "";
-  background-image: url(../gz02.png);
+  background-image: url(../gz02.jpeg);
   background-position: center;
 }
 
@@ -188,6 +188,12 @@ body { background-repeat: no-repeat; }
 #section10 {
   content: "";
   background-image: url(../gz09.jpeg);
+  background-position: center;
+}
+
+#section11 {
+  content: "";
+  background-image: url(../gz10.png);
   background-position: center;
 }
 
